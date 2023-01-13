@@ -5,31 +5,24 @@
 
 <h1>Register for CPTC</h1>
 
-<form method="post">
-    <div>
-        <div>
-            <label class="control-label" asp-for=FirstName></label>
-            <input class="form-control" asp-for="FirstName" />
-            <span class="text-danger" asp-validation-for="FirstName"></span>
-        </div>
-        <br />
-
-        <div>
-            <label class="control-label" asp-for="LastName"></label>
-            <input class="form-control" asp-for="LastName" />
-            <span class="text-danger" asp-validation-for="LastName"></span>
-        </div>
-        <br />
-
-        <div>
-            <label class="control-label" asp-for="DateOfBirth"></label>
-            <input type="date" class="form-control" asp-for="DateOfBirth" />
-            <span class="text-danger" asp-validation-for="DateOfBirth"></span>
-        </div>
-        <br />
-
-        <input type="submit" value="Register" />
+<form method="post" id="registration-form">
+    <div class="input-grp">
+        <label class="control-label" asp-for=FirstName></label>
+        <input class="form-control" asp-for="FirstName" />
+        <span class="text-danger" asp-validation-for="FirstName"></span>
     </div>
+    <div class="input-grp">
+        <label class="control-label" asp-for="LastName"></label>
+        <input class="form-control" asp-for="LastName" />
+        <span class="text-danger" asp-validation-for="LastName"></span>
+    </div>
+    <div class="input-grp">
+        <label class="control-label" asp-for="DateOfBirth"></label>
+        <input type="date" class="form-control" asp-for="DateOfBirth" />
+        <span class="text-danger" asp-validation-for="DateOfBirth"></span>
+    </div>
+
+    <input type="submit" value="Register" />
 </form>
 
 @section Scripts {
