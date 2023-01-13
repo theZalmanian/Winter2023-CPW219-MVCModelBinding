@@ -54,7 +54,7 @@ h1 {
 }
 
 .input-grp {
-    margin-top: .5em;
+    margin: .5em 0 .5em;
 }
 
 .form-control {
@@ -92,4 +92,25 @@ input[type="submit"]:hover {
     cursor: pointer;
     background: var(--secondaryColor);
     color: var(--backgroundColor);
+}
+
+.navbar {
+    background: var(--primaryColor) !important;
+}
+
+.bg-white, .navbar-brand, .nav-link.text-dark {
+    color: var(--backgroundColor) !important;
+}
+
+.text-muted {
+    color: var(--primaryColor) !important;
+}
+
+.border-top, .border-bottom {
+    border-top: 1px solid var(--primaryColor) !important;
+    border-bottom: 1px solid var(--primaryColor) !important;
+}
+
+a {
+    color: var(--secondaryColor);
 }
